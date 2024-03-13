@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dockerRun": "docker run -p 3000:3000 containerized-next-app"
   },
   "dependencies": {
     "react": "^18",
