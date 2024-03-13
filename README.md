@@ -6,9 +6,9 @@ For starting a new project it's so importannt to prepare a `Boilerplate` that se
 
 ### Boilerplate CheckList 👀
 
-- [ ] Tailwind
-- [ ] TypeScript
-- [ ] Docker
+- [x] Tailwind
+- [x] TypeScript
+- [x] Docker
 - [ ] Plop generation
 
   - [ ] Components Generation
