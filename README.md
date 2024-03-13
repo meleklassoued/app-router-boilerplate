@@ -1,4 +1,4 @@
-# App Router Boilerplate:
+# Nextjs App Router Boilerplate: ✨
 
 ## Introduction
 
