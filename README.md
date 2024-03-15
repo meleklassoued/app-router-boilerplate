@@ -10,7 +10,8 @@ Welcome to the App Router Boilerplate! This boilerplate is designed to kickstart
 - [x] TypeScript : Benefit from the type safety and enhanced tooling provided by TypeScript.
 - [x] Docker : Docker configuration included for containerized deployment
 - [x] Husky & conventional commits
-- [ ] CI/CD github workflows
+- [x] TESTS : TESTS configuration & validation included
+- [ ] CI/CD github workflow (comming soon 🔜)s
 - [ ] Plop generation (comming soon 🔜)
   - [ ] Components Generation
   - [ ] Custom Hooks Generation
