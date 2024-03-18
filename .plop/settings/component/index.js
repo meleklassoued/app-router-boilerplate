@@ -8,39 +8,40 @@ const actions = {
   page: [
     {
       type: 'add',
-      path: `/src/${componentDirectories.routes}/{{pascalCase name}}/page.ts`,
-      templateFile: `plop-templates/pageComponent.tsx.hbs`,
+      path: `../src/${componentDirectories.routes}/{{pascalCase name}}/page.tsx`,
+      templateFile: `templates/component/pageTemplate.tsx.hbs`,
     },
   ],
   layout: [
     {
       type: 'add',
-      path: `src/${componentDirectories.routes}/{{pascalCase name}}/layout.tsx`,
-      templateFile: 'plop-templates/layoutComponent.tsx.hbs',
+      path: `../src/${componentDirectories.routes}/{{pascalCase name}}/layout.tsx`,
+      templateFile: 'templates/component/layoutTemplate.tsx.hbs',
     },
   ],
   UI: [
     {
       type: 'add',
-      path: `src/${componentDirectories.UI}/{{pascalCase name}}/index.tsx`,
-      templateFile: 'plop-templates/UIComponent.tsx.hbs',
+      path: `../src/${componentDirectories.UI}/{{pascalCase name}}/index.tsx`,
+      templateFile: 'templates/component/component.tsx.hbs',
     },
     {
       type: 'add',
-      path: `src/${componentDirectories.UI}/{{pascalCase name}}/index.test.tsx`,
-      templateFile: 'plop-templates/UITest.tsx.hbs',
+      path: `../src/${componentDirectories.UI}/{{pascalCase name}}/index.test.tsx`,
+      templateFile: 'templates/component/test.tsx.hbs',
     },
   ],
   container: [
     {
       type: 'add',
-      path: `src/${componentDirectories.container}/{{pascalCase name}}/index.tsx`,
+      path: `../src/${componentDirectories.container}/{{pascalCase name}}/index.tsx`,
+      templateFile: 'templates/commponent/component.tsx.hbs',
     },
     {
       type: 'add',
       path: `src/${componentDirectories.container}/{
-      {pascalCase name}/index.test.tsx
-     }`,
+      {pascalCase name}}/index.test.tsx`,
+      templateFile: 'templates/component/test.tsx.hbs',
     },
   ],
 };
