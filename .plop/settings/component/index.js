@@ -35,12 +35,11 @@ const actions = {
     {
       type: 'add',
       path: `../src/${componentDirectories.container}/{{pascalCase name}}/index.tsx`,
-      templateFile: 'templates/commponent/component.tsx.hbs',
+      templateFile: 'templates/component/component.tsx.hbs',
     },
     {
       type: 'add',
-      path: `src/${componentDirectories.container}/{
-      {pascalCase name}}/index.test.tsx`,
+      path: `../src/${componentDirectories.container}/{{pascalCase name}}/index.test.tsx`,
       templateFile: 'templates/component/test.tsx.hbs',
     },
   ],
