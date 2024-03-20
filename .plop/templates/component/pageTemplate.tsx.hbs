@@ -1,5 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '{{pascalCase name}}',
+  description: '{{pascalCase name}} description ....',
+};
+
 export default function {{pascalCase name}}() {
- <div>
-  <h1>{{name}}</h1>
- </div>
+  return <h1>{{pascalCase name}} Page</h1>;
 }

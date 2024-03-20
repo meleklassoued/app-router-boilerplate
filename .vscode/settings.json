@@ -3,9 +3,9 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true,
-    "source.sortMembers": true
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
   },
   "headwind.runOnSave": false,
   "eslint.validate": ["javascript", "typescript"],
@@ -85,5 +85,8 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "jest.jestCommandLine": "yarn test",
   "eslint.alwaysShowStatus": true,
-  "githubPullRequests.ignoredPullRequestBranches": ["master"]
+  "githubPullRequests.ignoredPullRequestBranches": ["master"],
+  "files.associations": {
+    "plyconfig.json": "jsonc"
+  }
 }
