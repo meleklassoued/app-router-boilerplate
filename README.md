@@ -55,7 +55,7 @@ yarn lint:fix
 yarn generate
 ```
 
-this will prompt for you a list of component types you can choose between them and then choose a name for your `component`
+- This will prompt you with a list of component types from which you can choose. Afterward, you can select a name for your `component`.
 
 ### Project structure
 
