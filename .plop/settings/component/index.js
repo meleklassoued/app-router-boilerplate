@@ -8,14 +8,14 @@ const actions = {
   page: [
     {
       type: 'add',
-      path: `../src/${componentDirectories.routes}/{{pascalCase name}}/page.tsx`,
+      path: `../src/${componentDirectories.routes}/{{kebabCase name}}/page.tsx`,
       templateFile: `templates/component/pageTemplate.tsx.hbs`,
     },
   ],
   layout: [
     {
       type: 'add',
-      path: `../src/${componentDirectories.routes}/{{pascalCase name}}/layout.tsx`,
+      path: `../src/${componentDirectories.routes}/{{kebabCase name}}/layout.tsx`,
       templateFile: 'templates/component/layoutTemplate.tsx.hbs',
     },
   ],
