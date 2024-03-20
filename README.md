@@ -12,7 +12,7 @@ Welcome to the App Router Boilerplate! This boilerplate is designed to kickstart
 - [x] Husky & conventional commits
 - [x] TESTS : TESTS configuration & validation included
 - [x] Plop generation
-- [ ] CI/CD github workflows
+- [x] CI/CD github workflows
 
 ### Getting Started
 
