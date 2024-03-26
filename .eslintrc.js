@@ -28,6 +28,7 @@ module.exports = {
     // JavaScript rules
     'prefer-const': 'warn',
     'no-var': 'warn',
+    'no-console': ['error', { allow: ['warn'] }],
     'no-unused-vars': 'warn',
     'object-shorthand': 'warn',
     'quote-props': ['warn', 'as-needed'],
