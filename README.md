@@ -13,7 +13,7 @@ Welcome to the App Router Boilerplate! This boilerplate is designed to kickstart
 - [x] TESTS : TESTS configuration & validation included
 - [x] Plop generation
 - [x] CI/CD github workflow
-- [x] Miniaml config sitemap generation
+- [x] Minimal config sitemap generation
 
 ### Getting Started
 
