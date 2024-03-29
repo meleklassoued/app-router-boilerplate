@@ -12,7 +12,8 @@ Welcome to the App Router Boilerplate! This boilerplate is designed to kickstart
 - [x] Husky & conventional commits
 - [x] TESTS : TESTS configuration & validation included
 - [x] Plop generation
-- [x] CI/CD github workflows
+- [x] CI/CD github workflow
+- [x] Miniaml config sitemap generation
 
 ### Getting Started
 
@@ -60,61 +61,61 @@ yarn generate
 ### Project structure
 
 ```
- └── .dockerignore
-    └── .eslintrc.js
-    └── .gitignore
-    └── 📁.husky
-    └── .huskyrc
-    └── 📁.jest
-        └── test-utils.tsx
-    └── .lintstagedrc
-    └── 📁.plop
-        └── plopfile.js
-        └── 📁settings
-            └── 📁component
-                └── index.js
-        └── 📁templates
-            └── 📁component
-                └── component.tsx.hbs
-                └── layoutTemplate.tsx.hbs
-                └── pageTemplate.tsx.hbs
-                └── test.tsx.hbs
-    └── .prettierignore
-    └── .prettierrc
-    └── 📁.swc
-        ├── plugins
-    └── 📁.vscode
-        └── typescript-react.code-snippets
-    └── Dockerfile
-    └── License
-    └── README.md
-    └── SECURITY.md
-    └── 📁__tests__
-        └── index.test.tsx
-    └── jest.config.js
-    └── jest.setup.js
-    └── next-env.d.ts
-    └── next.config.mjs
-    └── package.json
-    └── postcss.config.js
-    └── 📁public
-        └── next.svg
-        └── vercel.svg
-    └── 📁src
-        └── 📁app
-            └── favicon.ico
-            └── globals.css
-            └── layout.tsx
-            └── page.tsx
-        └── 📁components
-            └── 📁UI
-            └── 📁containers
-        └── 📁helpers
-        └── 📁hooks
-        └── 📁lib
-    └── tailwind.config.ts
-    └── tsconfig.json
-    └── yarn.lock
+.
+├── README.md                   Project documentation
+├── LICENSE                    # Licensing information
+├── public/                    # Public assets (favicon, etc.)
+│   ├── favicon.ico
+│   └── ...
+├── src/                       # Application source code
+│   ├── app/                    # Application core components
+│   │   ├── globals.css          # Global CSS styles
+│   │   ├── layout.tsx           # Main application layout
+│   │   └── page.tsx            # Default application page
+│   ├── components/             # Reusable UI components
+│   │   ├── UI/                 # UI-specific components
+│   │   └── containers/          # Container components for specific functionalities and managing application logic
+│   ├── helpers/                 # Helper functions for logic and utilities
+│   ├── hooks/                   # React hooks for state management
+│   ├── lib/                    # Shared application libraries
+│   ├── next-env.d.ts            # TypeScript declarations for environment variables
+│   ├── next.config.mjs          # Next.js configuration file
+│   ├── styles/                  # Project-wide styles (optional)
+│   │   └── globals.css          # Global styles for the project
+│   └── utils/                   # Utility functions
+├── .dockerignore               # Files ignored during Docker image creation
+├── .eslintrc.js                # ESLint configuration for code linting
+├── .gitignore                 # Files ignored by Git version control
+├── .husky/                    # Husky configuration for pre-commit hooks
+├── .huskyrc                   # Husky configuration file
+├── .jest/                      # Jest configuration for testing
+│   └── test-utils.tsx           # Utility functions for testing
+├── .lintstagedrc               # Configuration for staged file linting
+├── .plop/                      # Plop configuration for code generation
+│   ├── plopfile.js             # Plop configuration file
+│   └── settings/               # Plop settings for component generation
+│       ├── component/
+│       │   └── index.js         # Plop component generation settings
+│       └── templates/
+│           ├── component/
+│           │   ├── component.tsx.hbs  # Template for component generation
+│           │   ├── layoutTemplate.tsx.hbs  # Template for layout generation
+│           │   └── pageTemplate.tsx.hbs   # Template for page generation
+│           │   └── test.tsx.hbs        # Template for test file generation
+├── .prettierignore             # Files ignored by Prettier code formatter
+├── .prettierrc                 # Prettier configuration file
+├── .swc/                       # Configuration for SWC (optional)
+│   └── plugins/                # SWC plugins (for compilation)
+├── .vscode/                    # VS Code configuration (optional)
+│   └── typescript-react.code-snippets  # VS Code code snippets for React development
+├── Dockerfile                  # Dockerfile for containerized deployment
+├── jest.config.js               # Jest configuration for unit testing
+├── jest.setup.js                # Setup file for Jest testing
+├── package.json                # Project dependencies and configuration
+├── postcss.config.js            # PostCSS configuration for styling (optional)
+└── tailwind.config.ts            # Tailwind CSS configuration file
+└── tsconfig.json                # TypeScript compiler configuration
+└── yarn.lock                   # Lock file for dependencies installed with Yarn
 ```
 
 > If you want to deploy your Next.js App on Vercel, you will not need a container in this case. Since Next.js is created and maintained by Vercel, you can do your deployment with ease. However, if you are looking into running your App through AWS, Google Cloud Run or other cloud providers, you will need a container.
