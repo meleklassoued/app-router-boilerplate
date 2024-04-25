@@ -27,7 +27,7 @@ module.exports = {
   rules: {
     // JavaScript rules
     'prefer-const': 'warn',
-    'no-var': 'warn',
+    'no-var': 'error',
     'no-console': ['error', { allow: ['warn'] }],
     'no-unused-vars': 'warn',
     'object-shorthand': 'warn',
@@ -58,6 +58,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
+    'react/display-name': 'off',
     'prettier/prettier': 'warn',
   },
   settings: {
