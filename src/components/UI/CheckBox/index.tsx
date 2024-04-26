@@ -1,3 +1,4 @@
+'use client';
 import { validateForm } from '@/lib/field-validator/helpers/validateForm';
 import { TRule } from '@/lib/field-validator/types';
 import get from '@/lib/get/index';

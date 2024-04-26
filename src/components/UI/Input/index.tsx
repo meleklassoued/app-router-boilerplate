@@ -1,3 +1,5 @@
+'use client';
+
 import clsx from 'clsx';
 import { forwardRef, HTMLInputTypeAttribute, useState } from 'react';
 import EyeSlashSvg from './Icons/EyeSlashSvg';
