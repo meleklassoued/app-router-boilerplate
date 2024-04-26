@@ -1,12 +1,13 @@
-import { render, screen } from '@/lib/.jest/test-utils';
+import { render } from '@/lib/.jest/test-utils';
 
-import { CheckBox } from '.';
+import RowCheckbox from './RawCheckbox';
 
-describe('CheckBox', () => {
-  it('should render the heading', () => {
-    render(<CheckBox />);
+describe('Button renderer', () => {
+  it('should render successfully', () => {
+    const { baseElement } = render(
+      <RowCheckbox name="Test name" label="test label" />,
+    );
 
-    // Assert
-    screen.getByRole('heading', { name: /CheckBox/i });
+    expect(baseElement).toBeTruthy();
   });
 });
