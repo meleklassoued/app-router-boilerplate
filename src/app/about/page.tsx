@@ -3,6 +3,7 @@
 import Checkbox from '@/components/UI/CheckBox';
 import Input from '@/components/UI/Input';
 import RadioButton from '@/components/UI/RadioButton';
+import Select from '@/components/UI/Select';
 import { FormProvider, useForm } from 'react-hook-form';
 export default function About() {
   const formMethods = useForm({
@@ -33,6 +34,16 @@ export default function About() {
                 value: 'm',
                 label: 'Male',
               },
+            ]}
+          />
+          <Select
+            placeholder="Select placeholder"
+            label="Select Label"
+            validate={[{ rule: 'exists' }]}
+            name="selection"
+            options={[
+              { label: 'English', value: 'en' },
+              { label: 'Français', value: 'fr' },
             ]}
           />
         </form>
