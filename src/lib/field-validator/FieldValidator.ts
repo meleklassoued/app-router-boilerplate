@@ -114,7 +114,6 @@ export default class FieldValidator {
   or() {
     this.fieldHasMultipleValidators = true;
     if (this.error) {
-      // TODO: Check for reference transfer
       this.multipleValidatorsError = {
         message: 'One or more of the validators failed',
         fields: [
