@@ -17,37 +17,39 @@ export default function About() {
   return (
     <>
       <h1>Hello About Page </h1>
-      <FormProvider {...formMethods}>
-        <form>
-          <Input name="test" placeholder="test placeholder" />
-          <Checkbox
-            name="check"
-            className="bg-dak"
-            label="check box for test"
-            defaultChecked
-          />
-          <RadioButton
-            name="radio"
-            values={[
-              { value: 'f', label: 'Female' },
-              {
-                value: 'm',
-                label: 'Male',
-              },
-            ]}
-          />
-          <Select
-            placeholder="Select placeholder"
-            label="Select Label"
-            validate={[{ rule: 'exists' }]}
-            name="selection"
-            options={[
-              { label: 'English', value: 'en' },
-              { label: 'Français', value: 'fr' },
-            ]}
-          />
-        </form>
-      </FormProvider>
+      <div className="mx-auto lg:max-w-xl">
+        <FormProvider {...formMethods}>
+          <form>
+            <Input name="test" placeholder="test placeholder" />
+            <Checkbox
+              name="check"
+              className="bg-dak"
+              label="check box for test"
+              defaultChecked
+            />
+            <RadioButton
+              name="radio"
+              values={[
+                { value: 'f', label: 'Female' },
+                {
+                  value: 'm',
+                  label: 'Male',
+                },
+              ]}
+            />
+            <Select
+              placeholder="Select placeholder"
+              label="Select Label"
+              validate={[{ rule: 'exists' }]}
+              name="selection"
+              options={[
+                { label: 'English', value: 'en' },
+                { label: 'Français', value: 'fr' },
+              ]}
+            />
+          </form>
+        </FormProvider>
+      </div>
     </>
   );
 }
