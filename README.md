@@ -74,7 +74,7 @@ yarn generate
 │   │   └── page.tsx            # Default application page
 │   ├── components/             # Reusable UI components
 │   │   ├── UI/                 # UI-specific components
-│   │   └── containers/          # Container components for specific functionalities and managing application logic
+│   │   └── features/          # Features components for specific functionalities and managing application logic
 │   ├── helpers/                 # Helper functions for logic and utilities
 │   ├── hooks/                   # React hooks for state management
 │   ├── lib/                    # Shared application libraries
